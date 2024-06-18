@@ -1,0 +1,16 @@
+// Fonts
+//@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// Project Styles
+@import 'ITPortal/mainStyles';
+@import 'ITPortal/devSupport.scss';
+@import 'SideBar/sidebar.scss';
+@import 'TopNavbar/topNavbar';
+@import 'Login/login.scss';
+@import 'NotFound/notFound.scss';

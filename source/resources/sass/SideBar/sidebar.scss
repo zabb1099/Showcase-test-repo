@@ -1,0 +1,114 @@
+@import "../_variables.scss";
+
+//-- SideBar --
+.sidebar {
+    background-color: $darkPurple;
+    height: 100vh;
+    color: $white;
+    position: fixed;
+    top: 0;
+    float: left;
+    z-index: 3;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@mixin sidebarFlex {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+@mixin sidebarText {
+    padding-left: 1vh;
+    font-size: 1rem;
+    margin-bottom: 0 !important;
+}
+
+@mixin icon($margin, $width) {
+    margin: $margin;
+    width: $width;
+}
+
+@mixin elementActive {
+    background-color: $white;
+
+    p {
+        color: $darkPurple !important;
+        font-weight: 700 !important;
+    }
+}
+
+.activeElement {
+    @include elementActive;
+}
+
+nav.expandSidebar ul.sidebarElements li {
+    padding-right: 2vh;
+}
+
+.sidebarElements {
+    > li {
+        @include sidebarFlex;
+        margin: 5px;
+
+        hr {
+            color: $white;
+            height: 2px;
+        }
+
+        p {
+            @include sidebarText;
+            font-weight: 400;
+            color: $white;
+        }
+
+        img {
+            @include icon(1.7vh, 30px);
+        }
+    }
+
+    > li.menuItems:hover, li.menuItems:focus {
+        @include elementActive;
+    }
+}
+
+.line {
+    border-top: 3px solid #FFF
+}
+
+//-- Icons --
+#iconSideBarArrowRight {
+    height: 30px;
+    margin-bottom: 209.5px;
+}
+
+#iconSideBarLogo {
+    width: 150px;
+    height: 100px;
+    margin: 0 1.7vh 15vh 1.7vh;
+}
+
+//-- Icon Animation --
+#iconSideBarArrowRight:hover {
+    -webkit-animation: $mover;
+    animation: $mover;
+}
+
+@-webkit-keyframes mover {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(10px);
+    }
+}
+
+@keyframes mover {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(10px);
+    }
+}

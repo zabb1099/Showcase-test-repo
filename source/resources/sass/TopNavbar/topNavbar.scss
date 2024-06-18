@@ -1,0 +1,36 @@
+@import "../_variables.scss";
+
+.topNavbar {
+    background-color: $darkPurple;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    height: 43.6px;
+}
+
+.userInfoTopNavbar {
+    color: $white;
+    margin-right: 5vh;
+    font-size: 1rem;
+    align-self: center;
+}
+
+.iconTopNavbar {
+    margin-right: 1em;
+    height: 30px;
+    width: 30px;
+    align-self: center;
+    margin-left: auto;
+}
+
+.routeName {
+    color: $white;
+    text-align: center;
+    font-size: 1.4rem;
+    align-self: center;
+    margin-left: 45%;
+    padding: 5px 0;
+}

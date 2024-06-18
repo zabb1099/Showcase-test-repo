@@ -1,0 +1,27 @@
+<?php
+
+namespace App\Http\Resources\BWPortal\Training\TrainingSessions;
+
+use Illuminate\Http\Request;
+use Illuminate\Http\Resources\Json\ResourceCollection;
+
+class TrainingSessionsCollection extends ResourceCollection
+{
+
+    /**
+     * @param Request $request
+     * @return array
+     */
+
+    public function toArray($request) : array
+    {
+        return parent::toArray($request);
+    }
+}
+
+
+
+
+
+
+

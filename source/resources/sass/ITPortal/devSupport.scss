@@ -1,0 +1,50 @@
+@import "../_variables.scss";
+
+@mixin subMenu {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+    padding-left: 6.8vh;
+}
+
+.subMenuOne {
+    @include subMenu;
+    background-color: $cream;
+    margin-top: 4vh;
+
+    > li {
+        flex: 1;
+        color: $grey;
+        cursor: pointer;
+    }
+}
+
+.subMenuTwo {
+    @include subMenu;
+    background-color: $darkPurple;
+    margin-top: -3.2vh;
+
+    > li {
+        flex: 1;
+        color: $white;
+        cursor: pointer;
+    }
+}
+
+.selectedElement {
+    background-color: $lightPurple;
+
+    span {
+        color: $white !important;
+    }
+}
+
+.notes {
+    letter-spacing: 0.5px;
+    font-weight: 700;
+    color: #dc3545 !important;
+    padding: 1rem 0 0.5rem 1.5rem !important;
+}

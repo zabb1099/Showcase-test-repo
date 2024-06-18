@@ -1,0 +1,74 @@
+$bg-purple: #3B2748;
+$c-white:#FFF;
+#pageNotFound {
+    background-color: $bg-purple;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+
+}
+
+.mainbox {
+    background-color: $bg-purple;
+    margin: auto;
+    height: 600px;
+    width: 600px;
+    position: relative;
+}
+
+.err {
+    color: $c-white;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 11rem;
+    position:absolute;
+    left: 20%;
+    top: 30%;
+}
+
+.far {
+    position: absolute;
+    font-size: 8.5rem;
+    left: 42%;
+    top: 15%;
+    color: $c-white;
+}
+.err2 {
+    color: $c-white;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 11rem;
+    position:absolute;
+    left: 44%;
+    top: 30%;
+}
+
+.err3 {
+    color: $c-white;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 11rem;
+    position:absolute;
+    left: 68%;
+    top: 30%;
+}
+
+.msg {
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.6rem;
+    position:absolute;
+    left: 16%;
+    top: 70%;
+    width: 75%;
+    color: $c-white;
+}
+
+.urlLinkStyle {
+    text-decoration: none;
+    color: white;
+}
+
+.urlLinkStyle:hover {
+    text-decoration: underline;
+}
